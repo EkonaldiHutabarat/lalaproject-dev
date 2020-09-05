@@ -1,0 +1,15 @@
+.card-wrapper{
+    width: 80%;
+    display: flex;
+    background-color: orange;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.image-produk{
+    width: 40%;
+}
+.stok{
+    text-align: center;
+    padding: 10px 20px;
+    color:#d9d9d9;
+}
