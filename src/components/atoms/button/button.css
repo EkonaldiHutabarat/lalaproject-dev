@@ -8,4 +8,9 @@
     border:none;
     color: white;
     text-transform: uppercase;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color:peru;
 }

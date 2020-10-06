@@ -1,15 +1,24 @@
 import React from 'react'
 import './home.css'
-import { Card, Gap } from '../../components'
+import {  Gap, Card,} from '../../components'
+
 
 const Home = () => {
+    
     return (
-        <div>
-            <Gap height={40}/>
-            <div className="container">
+        <div className="content">
+            <div>
+            <Gap height={150}/>
+                Search komponent
+            </div>
+            <div className="card">
                 <Card/>
-                <Card/> 
-                <Card/>    
+            </div>
+            <div>
+                Blog pages
+            </div>
+            <div>
+                Testimonial pages
             </div>
             <Gap height={40}/>
         </div>

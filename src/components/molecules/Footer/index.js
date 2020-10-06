@@ -8,7 +8,7 @@ const Footer = () => {
             <p className="logo">Lala dev</p>
         </div>
         <div className="copyright">
-            <p className="copyright-item">Copyright2020</p>
+            <p className="copyright-item">Develop by lalaproject</p>
         </div>
         </div>
     )

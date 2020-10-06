@@ -1,26 +1,33 @@
 import React from 'react'
 import './register.css'
 import { RegisterBg } from '../../assets'
-import { Input, Button, Gap, Link } from '../../components'
+import {useHistory} from 'react-router-dom'
+import { Input, Button, Gap, Link, Header, Footer } from '../../components'
 
-const Register = () => {
+const Register = ({...rest}) => {
+    const history = useHistory();
     return (
-        <div className="main-page">
-            <div className="left">
-                <img src={RegisterBg} className="RegisterBg" alt="imgRegister"/>
+        <div>
+            <Header/>
+            <Gap height={200}/>
+            <div className="main-page">
+                <div className="left">
+                    <img src={RegisterBg} className="RegisterBg" alt="imgRegister"/>
+                </div>
+                <div className="right">
+                    <p className="title">Form Register</p>
+                    <Input label="Name" placeholder="Full Name"/>
+                    <Gap height={18}/>
+                    <Input label="Email" placeholder="Email"/>
+                    <Gap height={18}/>
+                    <Input label="Password" placeholder="password"/>
+                    <Gap height={20}/>
+                    <Button title="Register"/>
+                    <Gap height={100}/>
+                    <Link title="Kembali ke Login" onClick={() => history.push('/login')}/>
+                </div>
             </div>
-            <div className="right">
-                <p className="title">Form Register</p>
-                <Input label="Name" placeholder="Full Name"/>
-                <Gap height={18}/>
-                <Input label="Email" placeholder="Email"/>
-                <Gap height={18}/>
-                <Input label="Password" placeholder="password"/>
-                <Gap height={20}/>
-                <Button title="Register"/>
-                <Gap height={100}/>
-                <Link title="Kembali ke Login"/>
-            </div>
+            <Footer/>
         </div>
     )
 }

@@ -30,3 +30,6 @@
     color:orange;
     text-align: center;
 }
+.input:focus{
+    border: 3px solid orange;
+}

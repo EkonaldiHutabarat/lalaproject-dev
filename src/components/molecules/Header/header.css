@@ -1,20 +1,38 @@
 .header{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background-color: white;
     padding: 20px 40px;
-    background-color: orange;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .logo-app{
     font-size: 20px;
     font-weight: bold;
-    color:white;
+    color:orange;
+    padding: 12px;
     margin:0px;
 }
-.menu-item{
-    font-size: 18px;
+.login{
+    background: orange;
+    padding: 10px 30px;
+    border-radius: 3px;
     color: white;
-    text-decoration: underline;
+    margin-left: 390px;
     cursor: pointer;
-    margin: 0px;
+}
+.login:hover{
+    background-color: peru;
+}
+.daftar{
+    padding: 10px 24px;
+    background: #5bb7de;
+    border-radius: 3px;
+    color: white;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.daftar:hover{
+    background-color: peru;
 }

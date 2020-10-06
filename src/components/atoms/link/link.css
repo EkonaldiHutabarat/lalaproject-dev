@@ -3,4 +3,8 @@
     font-size: 16px;
     color: orange;
     text-decoration: underline;
+    cursor: pointer;
+}
+.link:hover{
+    color: #1a73e8;
 }

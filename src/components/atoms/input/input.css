@@ -1,6 +1,6 @@
 
 .label{
-    font-size: 16px;
+    font-size: 16   px;
     color: orange;
     margin: 0px;
     margin-bottom: 6px;
@@ -12,5 +12,5 @@
     outline: none;
     width: 100%;
     box-sizing: border-box;
-
 }
+
