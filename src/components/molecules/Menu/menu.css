@@ -1,7 +1,144 @@
-ul {
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+.logo{
+    color: orange;
+}
+nav{
+    display: flex;
+    background-color: white;
+    justify-content: space-around;
+    /* padding: 2px 0; */
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    align-items: center;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    width: 40%;
+    justify-content: space-between;
+
+}
+nav ul li a{
+    color: orange;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.masuk{
+    background: orange;
+    padding: 8px 20px;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+}
+.masuk:hover{
+    background-color: peru;
+}
+
+/* humburger menu */
+.menu-toggle{
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+}
+.menu-toggle input{
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    left: -6px;
+    top: -3px;
+    opacity: 0;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.menu-toggle span{
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: orange;
+    border-radius: 3px;
+    transition: all 0.5s;
+}
+
+/* humburger menu animation */
+.menu-toggle span:nth-child(2){
+    transform-origin: 0 0;
+
+}
+
+.menu-toggle span:nth-child(4){
+    transform-origin: 0 100%;
+
+}
+ 
+.menu-toggle input:checked ~ span:nth-child(2){
+    transform: rotate(45deg)translate(-1px, -1px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(4){
+    transform: rotate(-45deg) translate(-1px,0);
+}
+
+.menu-toggle input:checked ~ span:nth-child(3){
+    transform: scale(0);
+}
+
+/* responsive tablet*/
+@media screen and (max-width:768px){
+    nav ul{
+        width: 50%;
+    }
+}
+
+/* responsive untuk mobile */
+@media screen and (max-width:576px){
+    .menu-toggle{
+        display: flex;
+    }
+    nav ul{
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 80%;
+        height: 100vh;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        background-color: lightgoldenrodyellow;
+        z-index: -1;
+        transform: translateX(100%);
+        transition: all 1s;
+    }
+
+    nav ul.slide{
+        transform: translateX(0);
+    }
+}
+
+
+
+
+
+/* ul {
+    display: flex;
     list-style-type: none;
     margin: 0;
-    padding: 0px 150px;
+    padding: 0px 10px;
     overflow: hidden;
 }
 
@@ -15,9 +152,10 @@ li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    cursor: pointer;
 }
 
 li a:hover {
     background-color: orange;
     color: white;
-}
+} */

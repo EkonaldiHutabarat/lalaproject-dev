@@ -2,13 +2,13 @@ import React from 'react'
 import './register.css'
 import { RegisterBg } from '../../assets'
 import {useHistory} from 'react-router-dom'
-import { Input, Button, Gap, Link, Header, Footer } from '../../components'
+import { Input, Button, Gap, Link, Footer, Menu } from '../../components'
 
 const Register = ({...rest}) => {
     const history = useHistory();
     return (
         <div>
-            <Header/>
+            <Menu/>
             <Gap height={200}/>
             <div className="main-page">
                 <div className="left">

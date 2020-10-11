@@ -1,6 +1,6 @@
 import React from 'react'
 import { LoginBg } from '../../assets'
-import { Input, Button, Gap, Link, Header, Footer } from '../../components'
+import { Input, Button, Gap, Link, Footer, Menu } from '../../components'
 import './login.css'
 import {useHistory} from 'react-router-dom'
 
@@ -8,7 +8,7 @@ const Login = (...rest) => {
     const history = useHistory();
     return (
         <div>
-            <Header/>
+            <Menu/>
             <Gap height={150}/>
             <div className="main-page">
                 <div className="left">

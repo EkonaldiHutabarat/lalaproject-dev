@@ -3,15 +3,16 @@ import { BrowserRouter as Router,Switch,Route} from 'react-router-dom/cjs/react-
 import Createblog from '../Createblog'
 import Detailblog from '../Detailblog'
 import Home from '../Home'
-import { Header, Footer } from '../../components'
+import {Footer, Menu } from '../../components'
 import './mainApp.css'
+import Perusahaan from '../Perusahaan'
 
 const MainApp = () => {
     return (
-        <div className="main-app-wrapper">
-            <div className="header-wrapper">
-                <Header/> 
-            </div>
+        <div className="container">
+            {/* <Header/>  */}
+            <Menu/>
+            <div className="main-app-wrapper">
             <div className="content-wrapper">
                 <Router>
                     <Switch>
@@ -20,6 +21,9 @@ const MainApp = () => {
                         </Route>
                         <Route path="/detail-blog">
                             <Detailblog/>
+                        </Route>
+                        <Route path="/perusahaan">
+                            <Perusahaan/>
                         </Route>
                         <Route path="/">
                             <Home/>
@@ -31,6 +35,7 @@ const MainApp = () => {
                 <Footer/>
             </div>
         </div>
+    </div>
     )
 }
 

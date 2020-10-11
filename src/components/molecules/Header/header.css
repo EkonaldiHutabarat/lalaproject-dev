@@ -2,13 +2,14 @@
     display: flex;
     background-color: white;
     padding: 20px 40px;
+    overflow: hidden;
     position: fixed;
     top: 0;
     width: 100%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .logo-app{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     color:orange;
     padding: 12px;
@@ -26,7 +27,7 @@
     background-color: peru;
 }
 .daftar{
-    padding: 10px 24px;
+    padding: 8px 20px;
     background: #5bb7de;
     border-radius: 3px;
     color: white;
@@ -34,5 +35,5 @@
     cursor: pointer;
 }
 .daftar:hover{
-    background-color: peru;
+    background-color:peru;
 }
